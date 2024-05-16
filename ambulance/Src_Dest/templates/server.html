@@ -1,0 +1,10 @@
+<html>
+<body>
+    <form action="{% url 'store_data' %}" method="POST">
+        {% csrf_token %}
+        Source: <input type="text" name="source"><br>
+        Destination: <input type="text" name="destination"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
